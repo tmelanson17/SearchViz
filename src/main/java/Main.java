@@ -24,11 +24,11 @@ public class Main {
         canvas.initializeMap();
         canvas.setSize(MazeDrawing.WIDTH, MazeDrawing.HEIGHT);
         Square begin = new Square(0, 0, false, false);
-        Square end = new Square(20, 20, false, false);
+        Square end = new Square(30, 40, false, false);
         
         
         // Create maze solver.
-        MazeSolver solver = new BreadthFirstMazeSolver();
+        MazeSolver solver = new AStarMazeSolver();
         solver.initialize(begin, end, canvas.map);
         canvas.createMazeSolver(solver);
         

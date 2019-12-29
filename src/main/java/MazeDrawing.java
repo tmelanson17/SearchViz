@@ -12,7 +12,7 @@ public class MazeDrawing extends Canvas {
     public static int WIDTH = 250;
     
     // TODO: Share this between interfaces
-    private Square end = new Square(20, 20, false, false);
+    private Square end = new Square(30, 40, false, false);
     
     
     public Square[][] map = new Square[COLS][ROWS];
